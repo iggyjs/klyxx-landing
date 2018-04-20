@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024px" height="386px" viewBox="0 0 1024 386" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>bottomWaveGroup</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="4.79836295%" y1="61.53071%" x2="92.3379966%" y2="25.8835516%" id="linearGradient-1">
+            <stop stop-color="#109DF5" offset="0%"></stop>
+            <stop stop-color="#62B9FF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="87.878645%" y1="20.0528485%" x2="9.34296878%" y2="24.7911593%" id="linearGradient-2">
+            <stop stop-color="#0181FE" offset="0%"></stop>
+            <stop stop-color="#0099FE" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(0.000000, -2680.000000)">
+        <g id="bottomWaveGroup" transform="translate(-180.000000, 2362.000000)">
+            <path d="M1335.97636,375.186771 C1130.48058,495.616877 738.988602,453.141529 558.492302,438.150229 C438.161436,428.156029 312.997335,459.304618 183,531.595996 L183,697 C287.997848,629.039442 384.329206,595.059164 471.994076,595.059164 C603.49138,595.059164 810.862129,636.035382 999.483262,636.035382 C1188.1044,636.035382 1311.47687,542.089905 1335.97636,468.132828 C1360.47586,394.175751 1541.47215,254.756665 1335.97636,375.186771 Z" id="bottomwave1" fill="url(#linearGradient-1)" transform="translate(808.000000, 512.500000) rotate(-5.000000) translate(-808.000000, -512.500000) "></path>
+            <path d="M78.729833,34.2627228 L1235.72983,34.2627228 C1401.06317,283.666076 1401.06317,440.376739 1235.72983,504.394712 C987.729833,600.421672 186.729833,530.902154 78.729833,922.512099 C6.72983301,1183.58539 6.72983301,887.50227 78.729833,34.2627228 Z" id="Path-3" fill="url(#linearGradient-2)" transform="translate(692.229833, 524.262723) scale(1, -1) rotate(3.000000) translate(-692.229833, -524.262723) "></path>
+        </g>
+    </g>
+</svg>

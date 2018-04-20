@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024px" height="721px" viewBox="0 0 1024 721" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="87.878645%" y1="20.0528485%" x2="9.34296878%" y2="24.7911593%" id="linearGradient-1">
+            <stop stop-color="#0181FE" offset="0%"></stop>
+            <stop stop-color="#0099FE" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="4.79836295%" y1="61.53071%" x2="92.3379966%" y2="25.8835516%" id="linearGradient-2">
+            <stop stop-color="#109DF5" offset="0%"></stop>
+            <stop stop-color="#62B9FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(-162.000000, -6.000000)">
+            <path d="M54,0 L1211,0 C1376.33333,249.403353 1376.33333,406.114016 1211,470.131989 C963,566.158949 162,496.639431 54,888.249376 C-18,1149.32267 -18,853.239547 54,0 Z" id="Path-3" fill="url(#linearGradient-1)"></path>
+            <path d="M1199.97636,91.1867713 C994.480576,211.616877 602.988602,169.141529 422.492302,154.150229 C302.161436,144.156029 176.997335,175.304618 47,247.595996 L47,413 C151.997848,345.039442 248.329206,311.059164 335.994076,311.059164 C467.49138,311.059164 674.862129,352.035382 863.483262,352.035382 C1052.1044,352.035382 1175.47687,258.089905 1199.97636,184.132828 C1224.47586,110.175751 1405.47215,-29.2433345 1199.97636,91.1867713 Z" id="Path-4" fill="url(#linearGradient-2)"></path>
+            <path d="M1187.22711,215.299058 C1099.68132,318.204859 1035.14757,317.205774 963.10989,342.682453 C915.084772,359.666906 845.048142,426.106088 753,542 L1187.22711,479.057617 L1187.22711,224.290827 C1245.59096,149.692447 1245.59096,146.695191 1187.22711,215.299058 Z" id="Path-5" fill="#0077FF"></path>
+        </g>
+    </g>
+</svg>

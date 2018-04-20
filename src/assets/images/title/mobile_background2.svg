@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024px" height="915px" viewBox="0 0 1024 915" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="87.878645%" y1="20.0528485%" x2="9.34296878%" y2="24.7911593%" id="linearGradient-1">
+            <stop stop-color="#0181FE" offset="0%"></stop>
+            <stop stop-color="#0099FE" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="4.79836295%" y1="61.53071%" x2="92.3379966%" y2="25.8835516%" id="linearGradient-2">
+            <stop stop-color="#109DF5" offset="0%"></stop>
+            <stop stop-color="#62B9FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(-570.000000, -65.000000)">
+            <path d="M81.9910112,0 L1838.72434,0 C2089.75855,395.736953 2089.75855,644.395199 1838.72434,745.974738 C1462.17303,898.344047 245.973034,788.035016 81.9910112,1409.4161 C-27.3303371,1823.67016 -27.3303371,1353.86479 81.9910112,0 Z" id="Path-3" fill="url(#linearGradient-1)"></path>
+            <path d="" id="Path-2" stroke="#979797"></path>
+            <path d="M1600.97636,146.186771 C1395.48058,266.616877 1003.9886,224.141529 823.492302,209.150229 C703.161436,199.156029 577.997335,230.304618 448,302.595996 L448,468 C552.997848,400.039442 649.329206,366.059164 736.994076,366.059164 C868.49138,366.059164 1075.86213,407.035382 1264.48326,407.035382 C1453.1044,407.035382 1576.47687,313.089905 1600.97636,239.132828 C1625.47586,165.175751 1806.47215,25.7566655 1600.97636,146.186771 Z" id="Path-4" fill="url(#linearGradient-2)"></path>
+        </g>
+    </g>
+</svg>

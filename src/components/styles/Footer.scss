@@ -1,0 +1,84 @@
+.footer-component {
+	background: url('../../assets/images/footer/background.svg') no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	overflow: hidden;
+	min-height: 600px;
+	width: 100%;
+	position: relative;
+
+	.footer-container {
+		position: absolute;
+		bottom: 100px;
+		left: 98px;
+
+		.footer-header {
+			font-family: Avenir-Heavy, sans-serif;
+			color: #FFF;
+			font-size: 32px;
+
+		}
+
+		.footer-button-wrap {
+			#growthReportButton {
+				padding: 8px 25px 7px 25px;
+				margin-right: 20px;
+				margin-bottom: 20px;
+				color: #FFFFFF;
+				font-family: 'Avenir-Heavy', sans-serif;
+				font-size: 16px;
+				background-color: transparent;
+				border-radius: 18px;
+				border: 3px solid #FFFFFF;
+				-webkit-transition: background-color 200ms linear;
+		        -moz-transition: background-color 200ms linear;
+		        -o-transition: background-color 200ms linear;
+		        transition: background-color 200ms linear;
+
+			}
+
+			#growthReportButton:hover {
+				cursor: pointer;
+				background-color: #FFFFFF;
+				color: #434343;
+			}
+
+			#growMyBusinessButton {
+				padding: 8px 25px 7px 25px;
+				color: #002FC7;
+				font-family: 'Avenir-Heavy', sans-serif;
+				font-size: 16px;
+				background-color: #80E7FF;
+				border-radius: 18px;
+				border: 3px solid #80E7FF;
+				-webkit-transition: background-color 200ms linear;
+		        -moz-transition: background-color 200ms linear;
+		        -o-transition: background-color 200ms linear;
+		        transition: background-color 200ms linear;
+			}
+
+			#growMyBusinessButton:hover {
+				cursor: pointer;
+				background-color: #FFFFFF;
+				color: #002FC7;
+			}
+		}
+	}
+}
+
+// Mobile styles
+@media only screen and (max-width: 586px) {
+	.footer-component {
+		min-height: 400px;
+		padding-bottom: 100px;
+
+		.footer-container {
+			width: 80%;
+			left: 10%;
+			bottom: 120px;
+
+		}
+	}
+}
