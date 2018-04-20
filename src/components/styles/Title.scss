@@ -106,7 +106,9 @@
 		background-size: cover;
 
 		.title-container {
-			padding-left: 50px;
+			display: block;
+			margin: 0 auto;
+			padding-left: 20px;
 			padding-top: 160px;
 		}
 	}
