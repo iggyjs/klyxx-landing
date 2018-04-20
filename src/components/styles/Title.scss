@@ -1,4 +1,10 @@
 .title-component {
+	-webkit-transition: all 700ms linear;
+    -moz-transition: all 700ms linear;
+    -o-transition: all 700ms linear;
+    transition: all 700ms linear;
+
+	width: 100%;
 	overflow: hidden;
 	padding-bottom: 400px;
 	background: url('../../assets/images/title/background.svg') no-repeat;
@@ -6,7 +12,6 @@
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	width: 100%;
 
 	.title-container {
 		padding-top: 280px;

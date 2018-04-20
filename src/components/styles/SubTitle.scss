@@ -66,11 +66,15 @@
 						overflow: hidden;
 
 						.prop-bar {
+							-webkit-transition: all 400ms linear;
+					        -moz-transition: all 400ms linear;
+					        -o-transition: all 400ms linear;
+					        transition: all 400ms linear;
+
 							position: absolute;
 							top: 28px;
 							display: inline-block;
 							height: 3px;
-							width: 89px;
 							background-color: #707E99;
 						}
 

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Waypoint from 'react-waypoint';
 
 // Styles
 import './styles/SubTitle.scss'
@@ -9,7 +10,19 @@ import stepsSrc from '../assets/images/subtitle/steps.png'
 class SubTitle extends Component {
     constructor (props) {
         super(props);
-        this.state = {};
+        this.state = {
+            propBar1Width: 2,
+            propBar2Width: 2,
+            propBar3Width: 2,
+        };
+
+        this.handlePropDivEnter = this.handlePropDivEnter.bind(this);
+    }
+
+    handlePropDivEnter (propBarWidth) {
+        let newState = {};
+        newState[propBarWidth] = 89;
+        this.setState(newState);
     }
 
     render () {
@@ -23,13 +36,18 @@ class SubTitle extends Component {
 
                 <div className="prop-points">
                     <div className="row">
-                         <div className="prop-div">
+
+                        <div className="prop-div">
                             &nbsp;
                         </div>
+
                         <div className="prop-div">
                             <div className="prop-text-wrap">
                                 <div className="prop-header-wrap">
-                                    <div className="prop-bar" />
+                                    <Waypoint onEnter={() => this.handlePropDivEnter('propBar1Width')}>
+                                        <div style={{width: this.state.propBar1Width}} className="prop-bar" />
+                                    </Waypoint>
+
                                     <h3 className="prop-text">
                                         growth & revenue
                                     </h3>
@@ -43,13 +61,17 @@ class SubTitle extends Component {
                                 <a href=""><button className="prop-button">See our Blog</button></a>
                             </div>
                         </div>
+
                     </div>
 
                     <div className="row">
                         <div className="prop-div">
                             <div className="prop-text-wrap">
                                 <div className="prop-header-wrap">
-                                    <div className="prop-bar" />
+                                    <Waypoint onEnter={() => this.handlePropDivEnter('propBar2Width')}>
+                                        <div style={{width: this.state.propBar2Width}} className="prop-bar" />
+                                    </Waypoint>
+
                                     <h3 className="prop-text">full team
                                     </h3>
                                 </div>
@@ -77,7 +99,10 @@ class SubTitle extends Component {
                         <div className="prop-div">
                             <div className="prop-text-wrap">
                                 <div className="prop-header-wrap">
-                                    <div className="prop-bar" />
+                                    <Waypoint onEnter={() => this.handlePropDivEnter('propBar3Width')}>
+                                        <div style={{width: this.state.propBar3Width}} className="prop-bar" />
+                                    </Waypoint>
+                                    
                                     <h3 className="prop-text">
                                         clear solutions
                                     </h3>
