@@ -6,18 +6,25 @@ import './styles/Title.scss';
 class Title extends Component {
     constructor (props) {
         super(props);
+
+        let performBackgroundAnimation = (window.innerHeight <= 790);
+
         this.state = {
-            titleHeight: 500,
+            performBackgroundAnimation: performBackgroundAnimation,
+            titleHeight: (performBackgroundAnimation) ? 400 : 700,
             showHeader: false,
             topBarWidth: 0
         };
+
         this.triggerBackgroundAnimation = this.triggerBackgroundAnimation.bind(this);
         this.triggerTopBarAnimation = this.triggerTopBarAnimation.bind(this);
     }
 
     componentDidMount () {
         setTimeout(this.triggerTopBarAnimation, 300)
-        setTimeout(this.triggerBackgroundAnimation, 175)
+        if (this.state.performBackgroundAnimation) {
+            setTimeout(this.triggerBackgroundAnimation, 175)
+        }
     }
 
     triggerTopBarAnimation () {
@@ -27,8 +34,7 @@ class Title extends Component {
     triggerBackgroundAnimation () {
         this.setState({titleHeight: 600})
     }
-
-
+    
     render () {
         return (
             <div style={{height: this.state.titleHeight}} className="title-component">

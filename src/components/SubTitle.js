@@ -102,7 +102,7 @@ class SubTitle extends Component {
                                     <Waypoint onEnter={() => this.handlePropDivEnter('propBar3Width')}>
                                         <div style={{width: this.state.propBar3Width}} className="prop-bar" />
                                     </Waypoint>
-                                    
+
                                     <h3 className="prop-text">
                                         clear solutions
                                     </h3>
