@@ -20,7 +20,7 @@ class Header extends Component {
 
     toggleMobileMenu () {
         let currentHeight = this.state.mobileMenuHeight;
-        let newHeight = (currentHeight === 0) ? 241 : 0;
+        let newHeight = (currentHeight === 0) ? 232 : 0;
         this.setState({
             mobileMenuHeight: newHeight
         })
