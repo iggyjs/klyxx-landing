@@ -44,9 +44,8 @@ class SubTitle extends Component {
                         <div className="prop-div">
                             <div className="prop-text-wrap">
                                 <div className="prop-header-wrap">
-                                    <Waypoint onEnter={() => this.handlePropDivEnter('propBar1Width')}>
-                                        <div style={{width: this.state.propBar1Width}} className="prop-bar" />
-                                    </Waypoint>
+
+                                    <div style={{width: this.state.propBar1Width}} className="prop-bar" />
 
                                     <h3 className="prop-text">
                                         growth & revenue
@@ -57,8 +56,9 @@ class SubTitle extends Component {
                                 <p className="description">We grow your business, so you can focus on running it. That means we cut through the
                                     noise of vanity metrics and find the few channels that actually lead to revenue and growth.
                                 </p>
-
-                                <a href=""><button className="prop-button">See our Blog</button></a>
+                                <Waypoint onEnter={() => this.handlePropDivEnter('propBar1Width')}>
+                                    <a href=""><button className="prop-button">See our Blog</button></a>
+                                </Waypoint>
                             </div>
                         </div>
 
@@ -68,10 +68,7 @@ class SubTitle extends Component {
                         <div className="prop-div">
                             <div className="prop-text-wrap">
                                 <div className="prop-header-wrap">
-                                    <Waypoint onEnter={() => this.handlePropDivEnter('propBar2Width')}>
-                                        <div style={{width: this.state.propBar2Width}} className="prop-bar" />
-                                    </Waypoint>
-
+                                    <div style={{width: this.state.propBar2Width}} className="prop-bar" />
                                     <h3 className="prop-text">full team
                                     </h3>
                                 </div>
@@ -82,8 +79,9 @@ class SubTitle extends Component {
                                     having all the resources to test out the marketing channels that make sense for your
                                     business and then figure out how to crack them.
                                 </p>
-
-                                <a href=""><button className="prop-button">See our Team</button></a>
+                                <Waypoint onEnter={() => this.handlePropDivEnter('propBar2Width')}>
+                                    <a href=""><button className="prop-button">See our Team</button></a>
+                                </Waypoint>
                             </div>
                         </div>
 
@@ -99,9 +97,7 @@ class SubTitle extends Component {
                         <div className="prop-div">
                             <div className="prop-text-wrap">
                                 <div className="prop-header-wrap">
-                                    <Waypoint onEnter={() => this.handlePropDivEnter('propBar3Width')}>
-                                        <div style={{width: this.state.propBar3Width}} className="prop-bar" />
-                                    </Waypoint>
+                                    <div style={{width: this.state.propBar3Width}} className="prop-bar" />
 
                                     <h3 className="prop-text">
                                         clear solutions
@@ -113,8 +109,9 @@ class SubTitle extends Component {
                                     Our job isn’t to add to that load but cut the noise instead. We focus on what matters
                                     and make sure that we make the ROI clear from day one.
                                 </p>
-
-                                <a href=""><button className="prop-button">Free Growth Report</button></a>
+                                <Waypoint onEnter={() => this.handlePropDivEnter('propBar3Width')}>
+                                    <a href=""><button className="prop-button">Free Growth Report</button></a>
+                                </Waypoint>
                             </div>
                         </div>
                     </div>

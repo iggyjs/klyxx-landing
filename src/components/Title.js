@@ -32,9 +32,9 @@ class Title extends Component {
     }
 
     triggerBackgroundAnimation () {
-        this.setState({titleHeight: 600})
+        this.setState({titleHeight: 617})
     }
-    
+
     render () {
         return (
             <div style={{height: this.state.titleHeight}} className="title-component">
