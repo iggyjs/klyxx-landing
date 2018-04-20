@@ -72,7 +72,7 @@ class Header extends Component {
                         <li className="mobile-nav-li">
                             <Link>Blog</Link>
                         </li>
-                        <li style={{paddingBottom: 30}} className="mobile-nav-li">
+                        <li className="mobile-nav-li">
                             <Link>Growth Report</Link>
                         </li>
                     </ul>
