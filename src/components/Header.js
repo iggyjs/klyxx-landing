@@ -72,7 +72,7 @@ class Header extends Component {
                         <li className="mobile-nav-li">
                             <Link>Blog</Link>
                         </li>
-                        <li style={{borderBottom: 'solid 1px #3a6b87'}} className="mobile-nav-li">
+                        <li className="mobile-nav-li">
                             <Link>Growth Report</Link>
                         </li>
                     </ul>
