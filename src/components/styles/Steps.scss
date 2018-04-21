@@ -1,35 +1,46 @@
 .step-circle-animation {
 	-webkit-animation-iteration-count: 1s;
 	-webkit-animation-timing-function:linear;
-	-webkit-animation-name:orbit;
-	-webkit-animation-duration: 2s;
+	-webkit-animation-name:planetOrbit;
+	-webkit-animation-duration: 2.5s;
 	-webkit-animation-direction: reverse;
 	-moz-animation-iteration-count: 1s;
 	-moz-animation-timing-function:linear;
-	-moz-animation-name:orbit;
-	-moz-animation-duration: 2s;
+	-moz-animation-name:planetOrbit;
+	-moz-animation-duration: 3s;
 }
 
 .outer-circle-animation {
 	-webkit-animation-iteration-count: 1s;
 	-webkit-animation-timing-function:linear;
 	-webkit-animation-name:orbit;
-	-webkit-animation-duration: 2s;
+	-webkit-animation-duration: 2.5s;
 	-moz-animation-iteration-count: 1s;
 	-moz-animation-timing-function:linear;
 	-moz-animation-name:orbit;
-	-moz-animation-duration: 2s;
+	-moz-animation-duration: 3s;
 }
 
 @-webkit-keyframes orbit {
-	from { -webkit-transform:rotate(0deg) }
+	from { -webkit-transform:rotate(180deg) }
 	to { -webkit-transform:rotate(360deg) }
+}
+
+@-webkit-keyframes planetOrbit {
+	from { -webkit-transform:rotate(0deg) }
+	to { -webkit-transform:rotate(180deg) }
 }
 
 @-moz-keyframes orbit {
 	from { -moz-transform:rotate(0deg) }
 	to { -moz-transform:rotate(360deg) }
 }
+
+@-moz-keyframes planetOrbit {
+	from { -webkit-transform:rotate(0deg) }
+	to { -webkit-transform:rotate(180deg) }
+}
+
 
 .step-text-wrapper {
 	.step-header {
