@@ -7,11 +7,16 @@ class Title extends Component {
     constructor (props) {
         super(props);
 
-        let performBackgroundAnimation = (window.innerHeight <= 790);
+        // let performBackgroundAnimation = (window.innerHeight <= 790);
 
+        // this.state = {
+        //     performBackgroundAnimation: performBackgroundAnimation,
+        //     titleHeight: (performBackgroundAnimation) ? 400 : 700,
+        //     showHeader: false,
+        //     topBarWidth: 0
+        // };
         this.state = {
-            performBackgroundAnimation: performBackgroundAnimation,
-            titleHeight: (performBackgroundAnimation) ? 400 : 700,
+            titleHeight: 400,
             showHeader: false,
             topBarWidth: 0
         };
@@ -22,9 +27,10 @@ class Title extends Component {
 
     componentDidMount () {
         setTimeout(this.triggerTopBarAnimation, 300)
-        if (this.state.performBackgroundAnimation) {
-            setTimeout(this.triggerBackgroundAnimation, 175)
-        }
+        // if (this.state.performBackgroundAnimation) {
+        //     setTimeout(this.triggerBackgroundAnimation, 175)
+        // }
+        setTimeout(this.triggerBackgroundAnimation, 175)
     }
 
     triggerTopBarAnimation () {
