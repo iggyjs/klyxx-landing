@@ -21,6 +21,7 @@ class Steps extends Component {
         this.triggerOrbitAnimation = this.triggerOrbitAnimation.bind(this);
         this.triggerTextAnimation = this.triggerTextAnimation.bind(this);
         this.showStepSubText = this.showStepSubText.bind(this);
+        this.updateDimensions = this.updateDimensions.bind(this);
     }
 
     showStepSubText (stepNumber) {
@@ -57,6 +58,35 @@ class Steps extends Component {
                 stepTextHeaderOpacity: 'show-step-header'
             })
         }
+    }
+
+    updateDimensions () {
+        if (window.innerWidth < 761) {
+            if (this.state.stepTextSubHeaderOpacity1 === '' || this.state.stepTextSubHeaderOpacity2 === '' || this.state.stepTextSubHeaderOpacity3 === '') {
+                // We don't trigger via click, so we need to show the sub text if we're resizing the page
+                this.setState({
+                    width: window.innerWidth,
+                    height: window.innerHeight,
+                    stepTextSubHeaderOpacity1: 'show-step-subtext',
+                    stepTextSubHeaderOpacity2: 'show-step-subtext',
+                    stepTextSubHeaderOpacity3: 'show-step-subtext'
+                });
+            }
+        } else {
+            this.setState({width: window.innerWidth, height: window.innerHeight});
+        }
+    }
+
+    componentWillMount () {
+        this.updateDimensions();
+    }
+
+    componentDidMount () {
+        window.addEventListener('resize', this.updateDimensions);
+    }
+
+    componentWillUnmount () {
+        window.removeEventListener('resize', this.updateDimensions);
     }
 
     render () {
