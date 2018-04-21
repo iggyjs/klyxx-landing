@@ -91,10 +91,10 @@
 
 	.middle-circle {
 		-webkit-transition: all 400ms linear;
-    -moz-transition: all 400ms linear;
-    -o-transition: all 400ms linear;
-    -ms-transition: all 400ms linear;
-    transition: all 400ms linear;
+	    -moz-transition: all 400ms linear;
+	    -o-transition: all 400ms linear;
+	    -ms-transition: all 400ms linear;
+	    transition: all 400ms linear;
 		border: 1px solid #979797;
 		border-radius: 50%;
 		height: 261px;
@@ -138,9 +138,10 @@
 // Mobile styles
 @media only screen and (max-width: 586px) {
 	.steps-component {
+		padding: 50px;
 		padding-bottom: 240px;
 	    margin: 0 auto;
-		max-width: 240px;
+		max-width: 203px;
 
 		.step-one {
 			top: 6px;
@@ -148,12 +149,12 @@
 		}
 
 		.step-two {
-			top: 10px;
+			top: 14px;
 			right: 5px;
 		}
 
 		.step-three{
-			bottom: -19px;
+			bottom: -16px;
 		}
 
 		.step-circle {
@@ -175,8 +176,8 @@
 
 		.middle-circle {
 			border: none;
-			margin-top: -76px;
-			left: -28px;
+			margin-top: -36px;
+			left: 20px;
 
 			.center-circle {
 				height: 97px;
