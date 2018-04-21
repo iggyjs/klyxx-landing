@@ -1,0 +1,125 @@
+.steps-component {
+    height: 100%;
+	overflow: hidden;
+	position: relative;
+	padding-bottom: 480px;
+
+	.step-one {
+		top: 79px;
+		left: 5px;
+	}
+
+	.step-two {
+		top: 83px;
+		right: 0;
+	}
+
+	.step-three{
+		bottom: -19px;
+	}
+
+	.step-circle {
+		cursor: pointer;
+		height: 48px;
+		width: 48px;
+		position: absolute;
+		border-radius: 50%;
+		background: #FFFFFF;
+		box-shadow: 0 3px 15px -2px rgba(0,119,255,0.54);
+
+		.step-number {
+			text-align: center;
+			color: #0077FF;
+			font-family: Avenir-Heavy, sans-serif;
+		}
+	}
+
+	.outer-circle {
+		position: absolute;
+		border: 1px solid #979797;
+		border-radius: 50%;
+		height: 446px;
+		width: 446px;
+		padding: 0;
+		margin: 0;
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.middle-circle {
+		border: 1px solid #979797;
+		border-radius: 50%;
+		height: 261px;
+		width: 261px;
+		position: absolute;
+		z-index: 3;
+		left: 20%;
+		top: 19%;
+		padding: 0;
+		margin: 0;
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		.center-circle {
+			background-color: #0077FF;
+			height: 127px;
+			width: 127px;
+			border-radius: 50%;
+			box-shadow: 0 23px 31px -5px rgba(0, 0, 0, 0.28);
+
+			.center-header-wrap {
+				margin-top: 43px;
+				.center-circle-header {
+					line-height: 0.8em;
+					text-align: center;
+					font-family: Avenir-Heavy, sans-serif;
+					color: #FFFFFF;
+					font-size: 18px;
+				}
+			}
+		}
+	}
+}
+
+
+.step-circle-animation {
+	-webkit-animation-iteration-count: 1s;
+	-webkit-animation-timing-function:linear;
+	-webkit-animation-name:orbit;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-direction: reverse;
+	-moz-animation-iteration-count: 1s;
+	-moz-animation-timing-function:linear;
+	-moz-animation-name:orbit;
+	-moz-animation-duration: 2s;
+}
+
+.outer-circle-animation {
+	-webkit-animation-iteration-count: 1s;
+		-webkit-animation-timing-function:linear;
+		-webkit-animation-name:orbit;
+		-webkit-animation-duration: 2s;
+		-moz-animation-iteration-count: 1s;
+		-moz-animation-timing-function:linear;
+		-moz-animation-name:orbit;
+		-moz-animation-duration: 2s;
+}
+
+@-webkit-keyframes orbit {
+	from { -webkit-transform:rotate(0deg) }
+	to { -webkit-transform:rotate(360deg) }
+}
+@-moz-keyframes orbit {
+	from { -moz-transform:rotate(0deg) }
+	to { -moz-transform:rotate(360deg) }
+}

@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import Waypoint from 'react-waypoint';
 
+// Components
+import StepsComponent from '../components/Steps'
+
 // Styles
 import './styles/SubTitle.scss'
-
-// Images
-import stepsSrc from '../assets/images/subtitle/steps.png'
 
 class SubTitle extends Component {
     constructor (props) {
@@ -31,7 +31,7 @@ class SubTitle extends Component {
                 <h2 className="subtitle-header">How do we do it?</h2>
 
                 <div className="steps-wrapper">
-                    <img className="steps-image" src={stepsSrc} alt=""/>
+                    <StepsComponent />
                 </div>
 
                 <div className="prop-points">
