@@ -44,8 +44,9 @@ class SubTitle extends Component {
                         <div className="prop-div">
                             <div className="prop-text-wrap">
                                 <div className="prop-header-wrap">
-
-                                    <div style={{width: this.state.propBar1Width}} className="prop-bar" />
+                                    <Waypoint onEnter={() => this.handlePropDivEnter('propBar1Width')}>
+                                        <div style={{width: this.state.propBar1Width}} className="prop-bar" />
+                                    </Waypoint>
 
                                     <h3 className="prop-text">
                                         growth & revenue
@@ -56,9 +57,7 @@ class SubTitle extends Component {
                                 <p className="description">We grow your business, so you can focus on running it. That means we cut through the
                                     noise of vanity metrics and find the few channels that actually lead to revenue and growth.
                                 </p>
-                                <Waypoint onEnter={() => this.handlePropDivEnter('propBar1Width')}>
-                                    <a href=""><button className="prop-button">See our Blog</button></a>
-                                </Waypoint>
+                                <a href=""><button className="prop-button">See our Blog</button></a>
                             </div>
                         </div>
 
