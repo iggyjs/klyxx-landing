@@ -45,35 +45,43 @@ class Steps extends Component {
     }
 
     triggerTextAnimation () {
-        // We stop requiring onClick to show the text at this window width
-        if (window.innerWidth < 761) {
-            this.setState({
-                stepTextHeaderOpacity: 'show-step-header',
-                stepTextSubHeaderOpacity1: 'show-step-subtext',
-                stepTextSubHeaderOpacity2: 'show-step-subtext',
-                stepTextSubHeaderOpacity3: 'show-step-subtext'
-            })
-        } else {
-            this.setState({
-                stepTextHeaderOpacity: 'show-step-header'
-            })
+        try {
+            // We stop requiring onClick to show the text at this window width
+            if (window.innerWidth < 761) {
+                this.setState({
+                    stepTextHeaderOpacity: 'show-step-header',
+                    stepTextSubHeaderOpacity1: 'show-step-subtext',
+                    stepTextSubHeaderOpacity2: 'show-step-subtext',
+                    stepTextSubHeaderOpacity3: 'show-step-subtext'
+                })
+            } else {
+                this.setState({
+                    stepTextHeaderOpacity: 'show-step-header'
+                })
+            }
+        } catch (e) {
+            console.log(e);
         }
     }
 
     updateDimensions () {
-        if (window.innerWidth < 761) {
-            if (this.state.stepTextSubHeaderOpacity1 === '' || this.state.stepTextSubHeaderOpacity2 === '' || this.state.stepTextSubHeaderOpacity3 === '') {
-                // We don't trigger via click, so we need to show the sub text if we're resizing the page
-                this.setState({
-                    width: window.innerWidth,
-                    height: window.innerHeight,
-                    stepTextSubHeaderOpacity1: 'show-step-subtext',
-                    stepTextSubHeaderOpacity2: 'show-step-subtext',
-                    stepTextSubHeaderOpacity3: 'show-step-subtext'
-                });
+        try {
+            if (window.innerWidth < 761) {
+                if (this.state.stepTextSubHeaderOpacity1 === '' || this.state.stepTextSubHeaderOpacity2 === '' || this.state.stepTextSubHeaderOpacity3 === '') {
+                    // We don't trigger via click, so we need to show the sub text if we're resizing the page
+                    this.setState({
+                        width: window.innerWidth,
+                        height: window.innerHeight,
+                        stepTextSubHeaderOpacity1: 'show-step-subtext',
+                        stepTextSubHeaderOpacity2: 'show-step-subtext',
+                        stepTextSubHeaderOpacity3: 'show-step-subtext'
+                    });
+                }
+            } else {
+                this.setState({width: window.innerWidth, height: window.innerHeight});
             }
-        } else {
-            this.setState({width: window.innerWidth, height: window.innerHeight});
+        } catch(e) {
+            console.log(e);
         }
     }
 
@@ -82,11 +90,21 @@ class Steps extends Component {
     }
 
     componentDidMount () {
-        window.addEventListener('resize', this.updateDimensions);
+        try {
+            window.addEventListener('resize', this.updateDimensions);
+        }
+        catch (e) {
+            console.log(e)
+        }
     }
 
     componentWillUnmount () {
-        window.removeEventListener('resize', this.updateDimensions);
+        try {
+            window.addEventListener('resize', this.updateDimensions);
+        }
+        catch (e) {
+            console.log(e)
+        }
     }
 
     render () {
