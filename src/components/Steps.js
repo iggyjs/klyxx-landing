@@ -44,9 +44,19 @@ class Steps extends Component {
     }
 
     triggerTextAnimation () {
-        this.setState({
-            stepTextHeaderOpacity: 'show-step-header'
-        })
+        // We stop requiring onClick to show the text at this window width
+        if (window.innerWidth < 761) {
+            this.setState({
+                stepTextHeaderOpacity: 'show-step-header',
+                stepTextSubHeaderOpacity1: 'show-step-subtext',
+                stepTextSubHeaderOpacity2: 'show-step-subtext',
+                stepTextSubHeaderOpacity3: 'show-step-subtext'
+            })
+        } else {
+            this.setState({
+                stepTextHeaderOpacity: 'show-step-header'
+            })
+        }
     }
 
     render () {
@@ -77,15 +87,15 @@ class Steps extends Component {
 
                 <Waypoint onEnter={this.addAnimationClass}>
                     <div className={'outer-circle ' + this.state.outerCircleAnimationClass}>
-                        <div onClick={() => this.showStepSubText(1)} className={'step-circle step-one ' + this.state.stepAnimationClass}>
+                        <div onClick={() => this.showStepSubText(1)} id={'stepOneCircle'} className={'step-circle step-one ' + this.state.stepAnimationClass}>
                             <p className="step-number">1</p>
                         </div>
 
-                        <div onClick={() => this.showStepSubText(2)}  className={'step-circle step-two ' + this.state.stepAnimationClass}>
+                        <div onClick={() => this.showStepSubText(2)} id={'stepTwoCircle'} className={'step-circle step-two ' + this.state.stepAnimationClass}>
                             <p className="step-number">2</p>
                         </div>
 
-                        <div onClick={() => this.showStepSubText(3)} className={'step-circle step-three ' + this.state.stepAnimationClass}>
+                        <div onClick={() => this.showStepSubText(3)} id={'stepThreeCircle'} className={'step-circle step-three ' + this.state.stepAnimationClass}>
                             <p className="step-number">3</p>
                         </div>
                     </div>
