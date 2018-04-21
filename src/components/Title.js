@@ -7,6 +7,7 @@ class Title extends Component {
     constructor (props) {
         super(props);
 
+        // TODO: Fix this so that window isn't called during build
         // let performBackgroundAnimation = (window.innerHeight <= 790);
 
         // this.state = {
