@@ -1,0 +1,81 @@
+.about-component {
+	height: 200px;
+	width: 100%;
+	overflow: hidden;
+	padding-bottom: 400px;
+	background: url('../../assets/images/about/background.svg') no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+	.about-container {
+		padding-top: 230px;
+		padding-left: 15%;
+		max-width: 430px;
+
+		.top-bar-header {
+			height: 5px;
+			background-color: #FFFFFF;
+			-webkit-transition: all 300ms linear;
+	        -moz-transition: all 300ms linear;
+	        -o-transition: all 300ms linear;
+	        transition: all 300ms linear;
+		}
+
+		.about-header {
+			font-family: 'Avenir-Heavy', sans-serif;
+			color: #FFF;
+			float: left;
+			font-size: 32px;
+			margin-bottom: 2px;
+			padding-bottom: 0;
+		}
+
+		.about-subheader {
+			margin-top: 6px;
+			font-family: 'Avenir-Light', sans-serif;
+			color: #FFF;
+			float: left;
+			font-size: 28px;
+			line-height: 1.5em;
+		}
+	}
+}
+
+// Really large screens
+@media only screen and (min-width: 1441px) {
+	.about-component {
+		margin-bottom: 100px;
+	}
+}
+
+// Tablet styles
+@media only screen and (max-width: 927px)  and (min-width: 587px) {
+	.about-component {
+		.about-container {
+			padding-left: 50px;
+			padding-top: 210px;
+		}
+	}
+}
+
+
+// Mobile styles
+@media only screen and (max-width: 586px) {
+	.about-component {
+		padding-bottom: 200px;
+		background: url('../../assets/images/title/mobile_background2.svg');
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+
+		.about-container {
+			display: block;
+			margin: 0 auto;
+			padding-left: 20px;
+			padding-top: 160px;
+		}
+	}
+}

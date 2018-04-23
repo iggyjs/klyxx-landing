@@ -13,7 +13,6 @@ class Title extends Component {
             topBarWidth: 0
         };
 
-        // TODO: Add scroll top threshold for background animation to instantly trigger if we reload too low on the page
         this.triggerBackgroundAnimation = this.triggerBackgroundAnimation.bind(this);
         this.triggerTopBarAnimation = this.triggerTopBarAnimation.bind(this);
     }
