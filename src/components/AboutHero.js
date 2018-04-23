@@ -31,7 +31,7 @@ class AboutHero extends Component {
                 <div className="about-container">
                     <div style={{width: this.state.topBarWidth}} className="top-bar-header" />
                     <h2 className="about-header">What We Do</h2>
-                    <h2 className="about-subheader">We help our clients grow traffic and make more money. Period.</h2>
+                    <h2 className="about-subheader">We help our clients grow traffic and make more money.</h2>
                 </div>
             </div>
         )
