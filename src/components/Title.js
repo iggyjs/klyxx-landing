@@ -7,17 +7,19 @@ class Title extends Component {
     constructor (props) {
         super(props);
 
-        // TODO: Fix this so that window isn't called during build
-        // let performBackgroundAnimation = (window.innerHeight <= 790);
+        let skipBackgroundAnimation = null;
 
-        // this.state = {
-        //     performBackgroundAnimation: performBackgroundAnimation,
-        //     titleHeight: (performBackgroundAnimation) ? 400 : 700,
-        //     showHeader: false,
-        //     topBarWidth: 0
-        // };
+        try {
+            skipBackgroundAnimation = (window.innerHeight > 790 || window.innerWidth > 1320);
+        } catch (e) {
+            // Window isn't defined in build
+            console.log(e);
+        }
+
+
         this.state = {
-            titleHeight: 400,
+            skipBackgroundAnimation: skipBackgroundAnimation,
+            titleHeight: (skipBackgroundAnimation) ? 700 : 400,
             showHeader: false,
             topBarWidth: 0
         };
@@ -28,10 +30,10 @@ class Title extends Component {
 
     componentDidMount () {
         setTimeout(this.triggerTopBarAnimation, 300)
-        // if (this.state.performBackgroundAnimation) {
-        //     setTimeout(this.triggerBackgroundAnimation, 175)
-        // }
-        setTimeout(this.triggerBackgroundAnimation, 175)
+
+        if (!this.state.skipBackgroundAnimation) {
+            setTimeout(this.triggerBackgroundAnimation, 175)
+        }
     }
 
     triggerTopBarAnimation () {
