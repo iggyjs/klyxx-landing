@@ -16,6 +16,7 @@ class SubTitle extends Component {
             propBar3Width: 2,
         };
 
+        this.triggerStepsAnimation = this.triggerStepsAnimation.bind(this);
         this.handlePropDivEnter = this.handlePropDivEnter.bind(this);
     }
 
@@ -25,13 +26,19 @@ class SubTitle extends Component {
         this.setState(newState);
     }
 
+    triggerStepsAnimation() {
+        this.refs.stepComponent.addAnimationClass()
+    }
+
     render () {
         return (
             <div className="subtitle-component">
-                <h2 className="subtitle-header">How do we do it?</h2>
+                <Waypoint onEnter={this.triggerStepsAnimation}>
+                    <h2 className="subtitle-header">How do we do it?</h2>
+                </Waypoint>
 
                 <div className="steps-wrapper">
-                    <StepsComponent />
+                    <StepsComponent ref={'stepComponent'}/>
                 </div>
 
                 <div className="prop-points">
