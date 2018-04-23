@@ -30,6 +30,11 @@ class SubTitle extends Component {
         this.refs.stepComponent.addAnimationClass()
     }
 
+    componentDidMount () {
+        let scrollPos = window.scrollY || window.scrollTop || document.getElementsByTagName("html")[0].scrollTop
+        console.log(window.scrollY);
+    }
+
     render () {
         return (
             <div className="subtitle-component">
