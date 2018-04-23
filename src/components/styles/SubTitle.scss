@@ -30,6 +30,7 @@
 		display: block;
 		margin-top: 80px;
 		padding: 20px;
+		padding-bottom: 60px;
 
 		.steps-image {
 			pointer-events: none;
@@ -128,6 +129,10 @@
 						max-width: 605px;
 					}
 				}
+
+				.prop-div-empty {
+					display: none !important;
+				}
 			}
 		}
 	}
@@ -147,6 +152,7 @@
 		.prop-points {
 			.row {
 				padding-bottom: 0;
+
 				.prop-div {
 					.prop-text-wrap {
 						.description {

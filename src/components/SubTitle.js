@@ -44,7 +44,7 @@ class SubTitle extends Component {
                 <div className="prop-points">
                     <div className="row">
 
-                        <div className="prop-div">
+                        <div className="prop-div prop-div-empty">
                             &nbsp;
                         </div>
 
@@ -91,13 +91,13 @@ class SubTitle extends Component {
                             </div>
                         </div>
 
-                        <div className="prop-div">
+                        <div className="prop-div prop-div-empty">
                             &nbsp;
                         </div>
                     </div>
 
                     <div className="row">
-                         <div className="prop-div">
+                         <div className="prop-div prop-div-empty">
                             &nbsp;
                         </div>
                         <div className="prop-div">
