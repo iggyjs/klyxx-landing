@@ -26,7 +26,7 @@ class Steps extends Component {
     addAnimationClass () {
         setTimeout(this.triggerOrbitAnimation, 0);
         // Orbit animation has a duration of 3000
-        setTimeout(this.triggerTextAnimation, 3500);
+        setTimeout(this.triggerTextAnimation, 3000);
     }
 
     triggerOrbitAnimation () {

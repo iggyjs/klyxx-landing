@@ -2,23 +2,23 @@
 	-webkit-animation-iteration-count: 1s;
 	-webkit-animation-timing-function:linear;
 	-webkit-animation-name:planetOrbit;
-	-webkit-animation-duration: 2.5s;
+	-webkit-animation-duration: 2.4s;
 	-webkit-animation-direction: reverse;
 	-moz-animation-iteration-count: 1s;
 	-moz-animation-timing-function:linear;
 	-moz-animation-name:planetOrbit;
-	-moz-animation-duration: 3s;
+	-moz-animation-duration: 2.4s;
 }
 
 .outer-circle-animation {
 	-webkit-animation-iteration-count: 1s;
 	-webkit-animation-timing-function:linear;
 	-webkit-animation-name:orbit;
-	-webkit-animation-duration: 2.5s;
+	-webkit-animation-duration: 2.4s;
 	-moz-animation-iteration-count: 1s;
 	-moz-animation-timing-function:linear;
 	-moz-animation-name:orbit;
-	-moz-animation-duration: 3s;
+	-moz-animation-duration: 2.4s;
 }
 
 @-webkit-keyframes orbit {
@@ -142,7 +142,6 @@
 	}
 
 	.step-circle {
-		cursor: pointer;
 		height: 48px;
 		width: 48px;
 		position: absolute;
