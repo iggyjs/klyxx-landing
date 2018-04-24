@@ -100,6 +100,10 @@
 					}
 
 					.prop-button {
+						display: none;
+						//TODO: Remove display none later
+
+						border: none;
 						cursor: pointer;
 						outline: none;
 						padding: 10px 50px;

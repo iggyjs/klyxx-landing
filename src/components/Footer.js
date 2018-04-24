@@ -17,7 +17,7 @@ class Footer extends Component {
                     <h2 className="footer-header">Ready to get started?</h2>
                     <div className="footer-button-wrap">
                         <a href="">
-                            <button id={'growthReportButton'}>Free Growth Report</button>
+                            <button style={{display: 'none'}} id={'growthReportButton'}>Free Growth Report</button>
                         </a>
                         <a href="">
                             <button id={'growMyBusinessButton'}>Grow my Business</button>

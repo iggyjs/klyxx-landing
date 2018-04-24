@@ -14,7 +14,8 @@
 	background-size: cover;
 
 	.title-container {
-		padding-top: 280px;
+		//padding-top: 280px;
+		padding-top: 270px; //TODO: Remove when both buttons are showing
 		padding-left: 15%;
 		max-width: 430px;
 
@@ -31,20 +32,27 @@
 			font-family: 'Avenir-Heavy', sans-serif;
 			color: #FFF;
 			float: left;
-			font-size: 32px;
-			line-height: 44px;
+			//font-size: 32px;
+			font-size: 35px; //TODO: Remove when both buttons are showing
+			line-height: 49px;
 		}
 
 		.title-button-wrap {
 			#growthReportButton {
+				margin-left: 5px; //TODO: Remove when both buttons are showing
+				height: 70px; //TODO: Remove when both buttons are showing
+				width: 300px; //TODO: Remove when both buttons are showing
+				border-radius: 80px; //TODO: Remove when both buttons are showing
+				font-size: 20px; //TODO: Remove when both buttons are showing
+
 				padding: 8px 25px 7px 25px;
 				margin-right: 20px;
 				margin-bottom: 20px;
 				color: #FFFFFF;
 				font-family: 'Avenir-Heavy', sans-serif;
-				font-size: 16px;
+				//font-size: 16px;
 				background-color: transparent;
-				border-radius: 18px;
+				//border-radius: 18px;
 				border: 3px solid #FFFFFF;
 				-webkit-transition: background-color 200ms linear;
 		        -moz-transition: background-color 200ms linear;
