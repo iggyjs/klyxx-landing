@@ -122,7 +122,14 @@
 			display: block;
 			margin: 0 auto;
 			padding-left: 20px;
-			padding-top: 160px;
+			padding-top: 170px;
+
+			.title-button-wrap {
+				#growthReportButton {
+					margin-left: 15px; //TODO: Remove when both buttons are showing
+					margin-top: 15px; //TODO: Remove when both buttons are showing
+				}
+			}
 		}
 	}
 }

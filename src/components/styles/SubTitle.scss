@@ -166,7 +166,9 @@
 						a {
 							text-decoration: none;
 							.prop-button {
-								display: block;
+								display: none;
+								//TODO: Remove display none later
+								//display: block;
 								margin: 0 auto;
 								margin-top: 40px;
 								margin-bottom: 20px;
