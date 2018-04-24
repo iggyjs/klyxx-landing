@@ -8,6 +8,9 @@ import StepsComponent from '../components/Steps'
 import growthRevIcon from '../assets/images/subtitle/growth_and_rev_icon.svg';
 import fullTeamIcon from '../assets/images/subtitle/full_team_icon.svg';
 import clearSolutionsIcon from '../assets/images/subtitle/clear_solutions_icon.svg';
+import futurismLogo from '../assets/images/subtitle/futurism.png';
+import nobleLogo from '../assets/images/subtitle/nobile.svg';
+import squarePegLogo from '../assets/images/subtitle/slogan.svg';
 
 // Styles
 import './styles/SubTitle.scss'
@@ -130,6 +133,22 @@ class SubTitle extends Component {
                                 </Waypoint>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+                <div className="clients-section">
+                    <h2 className="subtitle-header">Our Clients</h2>
+
+                    <div className="client-logos-wrap">
+                        <a target="_blank" href="https://futurism.com/">
+                            <img id={'futurismLogo'} className="logo-image" src={futurismLogo} alt=""/>
+                        </a>
+                        <a target="_blank" href="https://getnoble.co/">
+                            <img id={'nobleLogo'} className="logo-image" src={nobleLogo} alt=""/>
+                        </a>
+                        <a target="_blank" href="https://www.squarepeghires.com/">
+                            <img id={'squarePegLogo'} className="logo-image" src={squarePegLogo} alt=""/>
+                        </a>
                     </div>
                 </div>
             </div>
