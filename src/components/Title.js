@@ -38,7 +38,7 @@ class Title extends Component {
                     <h2 className="title-header">We help our clients grow traffic and make more money. Period.</h2>
                     <div className="title-button-wrap">
                         <a href="">
-                            <button id={'growthReportButton'}>Grow my Business</button>
+                            <a href="https://zainkhan2.typeform.com/to/bOsgib"><button id={'growthReportButton'}>Grow my Business</button></a>
                         </a>
                         <a href="">
                             <button style={{display: 'none'}} id={'growMyBusinessButton'}>Grow my Business</button>

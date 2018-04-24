@@ -20,7 +20,7 @@ class Footer extends Component {
                             <button style={{display: 'none'}} id={'growthReportButton'}>Free Growth Report</button>
                         </a>
                         <a href="">
-                            <button id={'growMyBusinessButton'}>Grow my Business</button>
+                            <a href="https://zainkhan2.typeform.com/to/bOsgib"><button id={'growMyBusinessButton'}>Grow my Business</button></a>
                         </a>
                     </div>
                 </div>
