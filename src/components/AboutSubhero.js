@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
 // Images
-import userAcqSrc from '../assets/images/about/user_acq_icon.png';
-import conversionSrc from '../assets/images/about/conversion.png';
-import designSrc from '../assets/images/about/design.png';
-import developmentSrc from '../assets/images/about/development.png';
-import revenueSrc from '../assets/images/about/revenue.png';
+import userAcqSrc from '../assets/images/about/user_acq_icon.svg';
+import conversionSrc from '../assets/images/about/conversion.svg';
+import designSrc from '../assets/images/about/design.svg';
+import developmentSrc from '../assets/images/about/engineering.svg';
+import revenueSrc from '../assets/images/about/revenue.svg';
 
 // Styles
 import './styles/AboutSubhero.scss';
