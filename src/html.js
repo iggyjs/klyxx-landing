@@ -9,6 +9,8 @@ if (process.env.NODE_ENV === `production`) {
   }
 }
 
+import favicon from './assets/images/favicon.png'
+
 module.exports = class HTML extends React.Component {
   render() {
     let css
@@ -29,7 +31,7 @@ module.exports = class HTML extends React.Component {
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
-          <link rel="shortcut icon" type="image/png" href="./static/favicon.png"/>
+          <link rel="shortcut icon" type="image/png" href={favicon} />
           {this.props.headComponents}
           {css}
         </head>
