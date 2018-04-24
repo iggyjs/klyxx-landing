@@ -9,7 +9,7 @@ const Layout = ({ children, data }) => (
   <div>
     <Helmet
         title={'Klyxx Creative'}
-        meta={[{ name: 'description', content: 'To be done' },{ name: 'keywords', content: 'to, do' }]}
+        meta={[{ name: 'description', content: 'A Growth and Development Agency' },{ name: 'keywords', content: 'Klyxx, klyxx, consulting, agency' }]}
     />
     <div>
       {children()}
