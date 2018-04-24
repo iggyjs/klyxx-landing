@@ -45,14 +45,24 @@
 		margin: 0 auto;
 
 		.row {
-			padding-bottom: 40px;
+			padding-bottom: 80px;
 			overflow: hidden;
 			width: 100%;
+
+			.prop-div.hidden-desktop {
+				display: none;
+			}
 
 			.prop-div {
 				display: inline-block;
 				overflow: hidden;
 				width: 50%;
+
+				.prop-image {
+					display: block;
+					margin: 0 auto;
+					margin-bottom: 30px;
+				}
 
 				.prop-text-wrap {
 					max-width: 465px;
@@ -127,15 +137,19 @@
 	.subtitle-component {
 		.prop-points {
 			.row {
+				.hidden-mobile {
+					display: none;
+				}
+
+				.prop-div.hidden-desktop {
+					display: block;
+				}
+
 				.prop-div {
 					width: 100%;
 					.prop-text-wrap {
 						max-width: 605px;
 					}
-				}
-
-				.prop-div-empty {
-					display: none !important;
 				}
 			}
 		}
@@ -154,10 +168,15 @@
 		}
 
 		.prop-points {
+			padding-top: 40px;
 			.row {
-				padding-bottom: 0;
+				padding-bottom: 50px;
 
 				.prop-div {
+					.prop-image {
+						height: 150px;
+						width: auto;
+					}
 					.prop-text-wrap {
 						.description {
 							line-height: 1.8em;

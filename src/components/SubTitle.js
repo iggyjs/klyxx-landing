@@ -4,6 +4,11 @@ import Waypoint from 'react-waypoint';
 // Components
 import StepsComponent from '../components/Steps'
 
+// Images
+import growthRevIcon from '../assets/images/subtitle/growth_and_rev_icon.svg';
+import fullTeamIcon from '../assets/images/subtitle/full_team_icon.svg';
+import clearSolutionsIcon from '../assets/images/subtitle/clear_solutions_icon.svg';
+
 // Styles
 import './styles/SubTitle.scss'
 
@@ -30,11 +35,6 @@ class SubTitle extends Component {
         this.refs.stepComponent.addAnimationClass()
     }
 
-    componentDidMount () {
-        let scrollPos = window.scrollY || window.scrollTop || document.getElementsByTagName("html")[0].scrollTop
-        console.log(window.scrollY);
-    }
-
     render () {
         return (
             <div className="subtitle-component">
@@ -49,8 +49,8 @@ class SubTitle extends Component {
                 <div className="prop-points">
                     <div className="row">
 
-                        <div className="prop-div prop-div-empty">
-                            &nbsp;
+                        <div className="prop-div">
+                            <img className="prop-image" src={growthRevIcon} alt=""/>
                         </div>
 
                         <div className="prop-div">
@@ -76,6 +76,10 @@ class SubTitle extends Component {
                     </div>
 
                     <div className="row">
+                        <div className="prop-div hidden-desktop">
+                            <img className="prop-image" src={fullTeamIcon} alt=""/>
+                        </div>
+                        
                         <div className="prop-div">
                             <div className="prop-text-wrap">
                                 <div className="prop-header-wrap">
@@ -96,15 +100,16 @@ class SubTitle extends Component {
                             </div>
                         </div>
 
-                        <div className="prop-div prop-div-empty">
-                            &nbsp;
+                        <div className="prop-div hidden-mobile">
+                            <img className="prop-image" src={fullTeamIcon} alt=""/>
                         </div>
                     </div>
 
                     <div className="row">
-                         <div className="prop-div prop-div-empty">
-                            &nbsp;
+                         <div className="prop-div">
+                            <img className="prop-image" src={clearSolutionsIcon} alt=""/>
                         </div>
+
                         <div className="prop-div">
                             <div className="prop-text-wrap">
                                 <div className="prop-header-wrap">
