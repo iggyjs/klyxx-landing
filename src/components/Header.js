@@ -79,7 +79,7 @@ class Header extends Component {
                             <Link to={'/about/'}>About Us</Link>
                         </li>
                         <li className="mobile-nav-li">
-                            <Link to={'https://zainkhan2.typeform.com/to/bOsgib'}>Grow my Business</Link>
+                            <a href={'https://zainkhan2.typeform.com/to/bOsgib'}>Grow my Business</a>
                         </li>
                         {/*<li className="mobile-nav-li">*/}
                             {/*<Link>Growth Report</Link>*/}
