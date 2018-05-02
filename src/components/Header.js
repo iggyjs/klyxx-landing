@@ -51,11 +51,11 @@ class Header extends Component {
                         </li>
 
                         <li style={{marginLeft: -30}} className="klyxx-header-li-element">
-                            <a href="https://zainkhan2.typeform.com/to/bOsgib" className="header-link">Grow My Business</a>
+                            <a href="https://klyxx.typeform.com/to/u5VosU" className="header-link">Grow My Business</a>
                         </li>
 
                         {/*<li className="klyxx-header-li-element">*/}
-                            {/*<Link to={'https://zainkhan2.typeform.com/to/bOsgib'} className="header-link">Growth Report</Link>*/}
+                            {/*<Link to={'https://klyxx.typeform.com/to/u5VosU'} className="header-link">Growth Report</Link>*/}
                         {/*</li>*/}
                     </ul>
                 </div>
@@ -79,7 +79,7 @@ class Header extends Component {
                             <Link to={'/about/'}>About Us</Link>
                         </li>
                         <li className="mobile-nav-li">
-                            <a href={'https://zainkhan2.typeform.com/to/bOsgib'}>Grow my Business</a>
+                            <a href={'https://klyxx.typeform.com/to/u5VosU'}>Grow my Business</a>
                         </li>
                         {/*<li className="mobile-nav-li">*/}
                             {/*<Link>Growth Report</Link>*/}
