@@ -34,6 +34,18 @@ module.exports = class HTML extends React.Component {
           <link rel="shortcut icon" type="image/png" href={favicon} />
           {this.props.headComponents}
           {css}
+          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118613902-1" />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                   window.dataLayer = window.dataLayer || [];
+                   function gtag(){dataLayer.push(arguments);}
+                   gtag('js', new Date());
+
+                   gtag('config', 'UA-118613902-1');
+                  `,
+            }}
+          />
         </head>
         <body {...this.props.bodyAttributes}>
           {this.props.preBodyComponents}

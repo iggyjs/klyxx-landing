@@ -1,11 +1,15 @@
+.title-component-wrap {
+	padding-bottom: 100px;
+}
+
 .title-component {
 	-webkit-transition: all 700ms linear;
     -moz-transition: all 700ms linear;
     -o-transition: all 700ms linear;
     transition: all 700ms linear;
-	height: 700px;
 	width: 100%;
 	overflow: hidden;
+	height: 600px;
 	padding-bottom: 400px;
 	background: url('../../assets/images/title/background.svg') no-repeat;
 	-webkit-background-size: cover;
@@ -94,7 +98,7 @@
 	.title-component {
 		margin-bottom: 100px;
 		height: 300px;
-		padding-bottom: 700px;
+		padding-bottom: 647px;
 	}
 }
 

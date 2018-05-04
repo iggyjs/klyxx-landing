@@ -32,20 +32,23 @@ class Title extends Component {
 
     render () {
         return (
-            <div id={'titleComponent'} style={{height: this.state.titleHeight}} className="title-component">
-                <div className="title-container">
-                    <div style={{width: this.state.topBarWidth}} className="top-bar-header" />
-                    <h2 className="title-header">We help our clients grow traffic and make more money. Period.</h2>
-                    <div className="title-button-wrap">
-                        <a href="">
-                            <a href="https://klyxx.typeform.com/to/u5VosU"><button id={'growthReportButton'}>Grow my Business</button></a>
-                        </a>
-                        <a href="">
-                            <button style={{display: 'none'}} id={'growMyBusinessButton'}>Grow my Business</button>
-                        </a>
+            <div className="title-component-wrap">
+                <div id={'titleComponent'} style={{height: this.state.titleHeight}} className="title-component">
+                    <div className="title-container">
+                        <div style={{width: this.state.topBarWidth}} className="top-bar-header" />
+                        <h2 className="title-header">We help our clients grow traffic and make more money. Period.</h2>
+                        <div className="title-button-wrap">
+                            <a href="">
+                                <a href="https://klyxx.typeform.com/to/u5VosU"><button id={'growthReportButton'}>Grow my Business</button></a>
+                            </a>
+                            <a href="">
+                                <button style={{display: 'none'}} id={'growMyBusinessButton'}>Grow my Business</button>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
+
         )
     }
 }
