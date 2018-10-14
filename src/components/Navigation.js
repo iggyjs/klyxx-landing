@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Link from 'gatsby-link'
 
 // Styles
-import './styles/Header.scss';
+import './styles/Navigation.scss';
 
 // Images
 import logoSrc from '../assets/images/header/logo3.svg';
