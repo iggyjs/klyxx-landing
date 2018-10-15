@@ -15,6 +15,7 @@ class ContactPage extends Component {
       }
     } catch (e) {
       console.log(e);
+      this.state = {}
     }
   }
 
@@ -22,7 +23,7 @@ class ContactPage extends Component {
     console.log(this.state);
     return (
       <div className="contact-component">
-        This is it! {this.state.dev}
+        This is it!
       </div>
     )
   }
