@@ -20,6 +20,7 @@ class ContactPage extends Component {
   }
 
   render () {
+    // TODO: Set up auto-filled form depending on what was clicked
     console.log(this.state);
     return (
       <div className="contact-component">
