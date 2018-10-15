@@ -11,7 +11,7 @@
 	background-size: cover;
 
 	.hero-container {
-		padding-top: 270px; //TODO: Remove when both buttons are showing
+		padding-top: 270px;
 		padding-left: 15%;
 		max-width: 430px;
 
@@ -28,19 +28,17 @@
 			font-family: 'Avenir-Heavy', sans-serif;
 			color: #FFF;
 			float: left;
-			//font-size: 32px;
-			font-size: 35px; //TODO: Remove when both buttons are showing
+			font-size: 35px;
 			line-height: 49px;
 		}
 
 		.hero-button-wrap {
 			#growthReportButton {
-				margin-left: 5px; //TODO: Remove when both buttons are showing
-				width: 300px; //TODO: Remove when both buttons are showing
-				border-radius: 80px; //TODO: Remove when both buttons are showing
-				font-size: 18px; //TODO: Remove when both buttons are showing
-				padding: 15px 25px 16px 25px; //TODO: Remove when both buttons are showing
-				//padding: 8px 25px 7px 25px;
+				margin-left: 5px;
+				width: 300px;
+				border-radius: 80px;
+				font-size: 18px;
+				padding: 15px 25px 16px 25px;
 				margin-right: 20px;
 				margin-bottom: 20px;
 				color: #FFFFFF;
@@ -127,8 +125,8 @@
 
 			.hero-button-wrap {
 				#growthReportButton {
-					margin-left: 15px; //TODO: Remove when both buttons are showing
-					margin-top: 15px; //TODO: Remove when both buttons are showing
+					margin-left: 15px;
+					margin-top: 15px;
 				}
 			}
 		}
