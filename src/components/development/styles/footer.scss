@@ -1,0 +1,58 @@
+.development-footer {
+  padding: 60px;
+
+  .footer-header {
+    font-family: 'Avenir-Heavy', sans-serif;
+    color: #4A4A4A;
+    font-size: 30px;
+    margin-bottom: 14px;
+  }
+
+  .footer-bar {
+    height: 5px;
+    background-color: #4A4A4A;
+    width: 20px;
+  }
+
+  .footer-description {
+    font-family: 'Avenir-Roman', sans-serif;
+    color: #4A4A4A;
+    font-size: 24px;
+    padding-top: 13px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  #developmentCtaButton {
+    width: 200px;
+    padding: 8px 25px 7px 25px;
+    color: #FFF;
+    font-family: 'Avenir-Heavy', sans-serif;
+    font-size: 17px;
+    background-color: #0181FE;
+    border-radius: 18px;
+    border: 3px solid #0181FE;
+    -webkit-transition: background-color 200ms linear;
+    -moz-transition: background-color 200ms linear;
+    -o-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+    text-decoration: none;
+  }
+
+  #developmentCtaButton:hover {
+    cursor: pointer;
+    background-color: #FFFFFF;
+    color: #0181FE;
+  }
+}
+
+
+@media only screen and (max-width: 587px) {
+  #developmentCtaButton {
+    margin: 0 auto;
+    display: block;
+    margin-top: 50px;
+  }
+}

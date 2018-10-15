@@ -8,9 +8,19 @@ class Hero extends Component {
         super(props);
 
         this.state = {
-            showHeader: false,
-            topBarWidth: 0
+          showHeader: false,
+          topBarWidth: 0
         };
+
+        this.triggerTopBarAnimation = this.triggerTopBarAnimation.bind(this)
+    }
+
+    componentDidMount () {
+      setTimeout(this.triggerTopBarAnimation, 300)
+    }
+
+    triggerTopBarAnimation () {
+      this.setState({topBarWidth: 45})
     }
 
     render () {
