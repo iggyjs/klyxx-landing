@@ -21,9 +21,9 @@ class DevelopmentSubhero extends Component {
               are fast, responsive modular.
             </p>
 
-            <Link to={'/contact?static=1'} className="learn-more-development-button">
-              Learn more
-            </Link>
+            <a href="https://klyxx.typeform.com/to/YuJ6xR" className="learn-more-development-button">
+              Contact us
+            </a>
           </div>
 
           <div className="service-text-group">
@@ -32,9 +32,9 @@ class DevelopmentSubhero extends Component {
               as proxying information between data layers or as involved as setting up your application's
               entire backend.
             </p>
-            <Link to={'/contact?cloud=1'} className="learn-more-development-button">
-              Learn more
-            </Link>
+            <a href="https://klyxx.typeform.com/to/YuJ6xR" className="learn-more-development-button">
+              Contact us
+            </a>
           </div>
 
           <div className="service-text-group">
@@ -42,9 +42,9 @@ class DevelopmentSubhero extends Component {
             <p className="service-paragraph">
               We build pitch-ready MVPs and proof-of-concept applications. We feel comfortable with popular front and back end frameworks.
             </p>
-            <Link to={'/contact?proto=1'} className="learn-more-development-button">
-              Learn more
-            </Link>
+            <a href="https://klyxx.typeform.com/to/YuJ6xR" className="learn-more-development-button">
+              Contact us
+            </a>
           </div>
 
           <div className="service-text-group">
@@ -53,9 +53,9 @@ class DevelopmentSubhero extends Component {
               Sometimes it's hard to know how to move forward. We provide audits for your existing tech stack
               and processes.
             </p>
-            <Link to={'/contact?audits=1'} className="learn-more-development-button">
-              Learn more
-            </Link>
+            <a href="https://klyxx.typeform.com/to/YuJ6xR" className="learn-more-development-button">
+              Contact us
+            </a>
           </div>
 
           <div className="service-text-group">
@@ -63,9 +63,9 @@ class DevelopmentSubhero extends Component {
             <p className="service-paragraph">
               Together with our lead growth hackers, we build tools to automate rote and redundant tasks for your internal operations.
             </p>
-            <Link to={'/contact?it=1'} className="learn-more-development-button">
-              Learn more
-            </Link>
+            <a href="https://klyxx.typeform.com/to/YuJ6xR" className="learn-more-development-button">
+              Contact us
+            </a>
           </div>
         </div>
       </div>
