@@ -1,25 +1,17 @@
-.title-component-wrap {
-	padding-bottom: 100px;
-}
+.hero-component-wrap {}
 
-.title-component {
-	-webkit-transition: all 700ms linear;
-    -moz-transition: all 700ms linear;
-    -o-transition: all 700ms linear;
-    transition: all 700ms linear;
+.hero-component {
 	width: 100%;
 	overflow: hidden;
-	height: 600px;
-	padding-bottom: 400px;
-	background: url('../../assets/images/title/background.svg') no-repeat;
+	height: 1000px;
+	background: url('../../assets/images/hero/background.png') no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 
-	.title-container {
-		//padding-top: 280px;
-		padding-top: 270px; //TODO: Remove when both buttons are showing
+	.hero-container {
+		padding-top: 270px;
 		padding-left: 15%;
 		max-width: 430px;
 
@@ -27,28 +19,26 @@
 			height: 5px;
 			background-color: #FFFFFF;
 			-webkit-transition: all 300ms linear;
-	        -moz-transition: all 300ms linear;
-	        -o-transition: all 300ms linear;
-	        transition: all 300ms linear;
+      -moz-transition: all 300ms linear;
+      -o-transition: all 300ms linear;
+      transition: all 300ms linear;
 		}
 
-		.title-header {
+		.hero-header {
 			font-family: 'Avenir-Heavy', sans-serif;
 			color: #FFF;
 			float: left;
-			//font-size: 32px;
-			font-size: 35px; //TODO: Remove when both buttons are showing
+			font-size: 35px;
 			line-height: 49px;
 		}
 
-		.title-button-wrap {
+		.hero-button-wrap {
 			#growthReportButton {
-				margin-left: 5px; //TODO: Remove when both buttons are showing
-				width: 300px; //TODO: Remove when both buttons are showing
-				border-radius: 80px; //TODO: Remove when both buttons are showing
-				font-size: 18px; //TODO: Remove when both buttons are showing
-				padding: 15px 25px 16px 25px; //TODO: Remove when both buttons are showing
-				//padding: 8px 25px 7px 25px;
+				margin-left: 5px;
+				width: 300px;
+				border-radius: 80px;
+				font-size: 18px;
+				padding: 15px 25px 16px 25px;
 				margin-right: 20px;
 				margin-bottom: 20px;
 				color: #FFFFFF;
@@ -83,7 +73,7 @@
 		        -o-transition: background-color 200ms linear;
 		        transition: background-color 200ms linear;
 			}
-			
+
 			#growMyBusinessButton:hover {
 				cursor: pointer;
 				background-color: #FFFFFF;
@@ -95,17 +85,21 @@
 
 // Really large screens
 @media only screen and (min-width: 1441px) {
-	.title-component {
+	.hero-component {
+		height: 800px;
 		margin-bottom: 100px;
-		height: 300px;
-		padding-bottom: 647px;
+		background: url('../../assets/images/hero/large_background.png') no-repeat;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
 	}
 }
 
 // Tablet styles
-@media only screen and (max-width: 927px)  and (min-width: 587px) {
-	.title-component {
-		.title-container {
+@media only screen and (max-width: 912px)  and (min-width: 587px) {
+	.hero-component {
+		.hero-container {
 			padding-left: 50px;
 			padding-top: 210px;
 		}
@@ -115,24 +109,24 @@
 
 // Mobile styles
 @media only screen and (max-width: 586px) {
-	.title-component {
-		padding-bottom: 200px;
-		background: url('../../assets/images/title/mobile_background2.svg');
+	.hero-component {
+		height: 700px;
+		background: url('../../assets/images/hero/mobile_background2.svg');
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
 		background-size: cover;
 
-		.title-container {
+		.hero-container {
 			display: block;
 			margin: 0 auto;
 			padding-left: 20px;
 			padding-top: 170px;
 
-			.title-button-wrap {
+			.hero-button-wrap {
 				#growthReportButton {
-					margin-left: 15px; //TODO: Remove when both buttons are showing
-					margin-top: 15px; //TODO: Remove when both buttons are showing
+					margin-left: 15px;
+					margin-top: 15px;
 				}
 			}
 		}

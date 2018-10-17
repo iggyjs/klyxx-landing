@@ -1,5 +1,7 @@
-.subtitle-component {
-	.subtitle-header {
+.subhero-component {
+	margin-top: -130px;
+
+	.subhero-header {
 		max-width: 268px;
 		display: block;
 		margin: 0 auto;
@@ -10,7 +12,7 @@
 		position: relative;
 	}
 
-	.subtitle-header:after {
+	.subhero-header:after {
 		content: '';
 		position: absolute;
 		z-index: -1;
@@ -166,9 +168,16 @@
 	}
 }
 
+// Really large screens
+@media only screen and (min-width: 1441px) {
+	.subhero-component {
+		margin-top: 0px;
+	}
+}
+
 // Tablet styles
 @media only screen and (max-width: 997px) {
-	.subtitle-component {
+	.subhero-component {
 		.prop-points {
 			.row {
 				.hidden-mobile {
@@ -213,8 +222,10 @@
 
 // Mobile styles
 @media only screen and (max-width: 586px) {
-	.subtitle-component {
-		.subtitle-header {
+	.subhero-component {
+		margin-top: -30px;
+
+		.subhero-header {
 			padding-top: 50px;
 		}
 
@@ -246,7 +257,7 @@
 								margin: 0 auto;
 								margin-top: 40px;
 								margin-bottom: 20px;
-							}	
+							}
 						}
 					}
 				}

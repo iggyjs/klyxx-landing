@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 // Components
-import Header from '../components/Header';
+import Navigation from '../components/Navigation';
 import AboutHero from '../components/AboutHero';
 import AboutSubhero from '../components/AboutSubhero';
 import Footer from '../components/Footer';
@@ -15,7 +15,7 @@ class About extends Component {
     render () {
         return (
             <div>
-                <Header />
+                <Navigation />
                 <AboutHero />
                 <AboutSubhero />
                 <Footer />

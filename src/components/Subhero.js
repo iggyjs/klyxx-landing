@@ -5,17 +5,17 @@ import Waypoint from 'react-waypoint';
 import StepsComponent from '../components/Steps'
 
 // Images
-import growthRevIcon from '../assets/images/subtitle/growth_and_rev_icon.svg';
-import fullTeamIcon from '../assets/images/subtitle/full_team_icon.svg';
-import clearSolutionsIcon from '../assets/images/subtitle/clear_solutions_icon.svg';
-import futurismLogo from '../assets/images/subtitle/futurism.png';
-import nobleLogo from '../assets/images/subtitle/nobile.svg';
-import squarePegLogo from '../assets/images/subtitle/slogan.svg';
+import growthRevIcon from '../assets/images/subhero/growth_and_rev_icon.svg';
+import fullTeamIcon from '../assets/images/subhero/full_team_icon.svg';
+import clearSolutionsIcon from '../assets/images/subhero/clear_solutions_icon.svg';
+import futurismLogo from '../assets/images/subhero/futurism.png';
+import nobleLogo from '../assets/images/subhero/nobile.svg';
+import squarePegLogo from '../assets/images/subhero/slogan.svg';
 
 // Styles
-import './styles/SubTitle.scss'
+import './styles/Subhero.scss'
 
-class SubTitle extends Component {
+class Subhero extends Component {
     constructor (props) {
         super(props);
         this.state = {
@@ -40,9 +40,9 @@ class SubTitle extends Component {
 
     render () {
         return (
-            <div className="subtitle-component">
+            <div className="subhero-component">
                 <Waypoint onEnter={this.triggerStepsAnimation}>
-                    <h2 className="subtitle-header">How do we do it?</h2>
+                    <h2 className="subhero-header">How do we do it?</h2>
                 </Waypoint>
 
                 <div className="steps-wrapper">
@@ -82,7 +82,7 @@ class SubTitle extends Component {
                         <div className="prop-div hidden-desktop">
                             <img className="prop-image" src={fullTeamIcon} alt=""/>
                         </div>
-                        
+
                         <div className="prop-div">
                             <div className="prop-text-wrap">
                                 <div className="prop-header-wrap">
@@ -137,7 +137,7 @@ class SubTitle extends Component {
                 </div>
 
                 <div className="clients-section">
-                    <h2 className="subtitle-header">Our Clients</h2>
+                    <h2 className="subhero-header">Our Clients</h2>
 
                     <div className="client-logos-wrap">
                         <a target="_blank" href="https://futurism.com/">
@@ -156,4 +156,4 @@ class SubTitle extends Component {
     }
 }
 
-export default SubTitle;
+export default Subhero;
