@@ -14,10 +14,8 @@ class DevelopmentFooter extends Component {
           We're based in Brooklyn, but work with companies from all over.
         </p>
         <Link to={'/'}>
-          <a href="https://klyxx.typeform.com/to/YuJ6xR">
-            <button id={'developmentCtaButton'}>
+          <a id={'developmentCtaButton'} href="https://klyxx.typeform.com/to/YuJ6xR">
               Say hello
-            </button>
           </a>
         </Link>
       </div>
