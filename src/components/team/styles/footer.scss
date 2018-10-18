@@ -1,0 +1,63 @@
+.team-footer {
+  background-image: linear-gradient(-266deg, #0181FE 10%, #0099FE 89%);
+  padding: 60px;
+  padding-bottom: 70px;
+  margin-top: 40px;
+
+  .footer-header {
+    font-family: 'Avenir-Heavy', sans-serif;
+    color: #FFF;
+    font-size: 30px;
+    margin-bottom: 14px;
+  }
+
+  .footer-bar {
+    height: 5px;
+    background-color: #FFF;
+    width: 20px;
+  }
+
+  .footer-description {
+    font-family: 'Avenir-Light', sans-serif;
+    color: #FFF;
+    font-size: 18px;
+    padding-top: 13px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  #teamCtaButton {
+    width: 140px;
+    display: block;
+    text-align: center;
+    padding: 8px 25px 7px 25px;
+    color: #0181FE;
+    font-family: 'Avenir-Heavy', sans-serif;
+    font-size: 17px;
+    background-color: #FFF;
+    border-radius: 18px;
+    border: 3px solid #DDD;
+    -webkit-transition: background-color 200ms linear;
+    -moz-transition: background-color 200ms linear;
+    -o-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+    text-decoration: none;
+  }
+
+  #teamCtaButton:hover {
+    cursor: pointer;
+    background-color: #434343;
+    color: #fff;
+  }
+}
+
+
+@media only screen and (max-width: 587px) {
+  #teamCtaButton {
+    margin: 0 auto;
+    display: block;
+    margin-top: 50px;
+  }
+}
