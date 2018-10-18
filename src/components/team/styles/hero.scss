@@ -1,0 +1,121 @@
+.team-hero {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .hero-text {
+    background-image: linear-gradient(-266deg, #0181FE 10%, #0099FE 89%);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    padding-left: 40px;
+    display: flex;
+    flex-direction: column;
+
+    .team-header {
+      padding: 0;
+      margin-bottom: 15px;
+      font-family: 'Avenir-Heavy', sans-serif;
+      font-size: 40px;
+      color: #F6F6F6;
+      padding-left: 20px;
+    }
+
+    .team-subheader {
+      padding: 0;
+      margin-bottom: 0;
+      margin-top: 6px;
+      max-width: 800px;
+      font-family: 'Avenir-Light', sans-serif;
+      font-size: 30px;
+      color: #F6F6F6;
+      padding-left: 20px;
+    }
+  }
+
+  .team-panels-wrap {
+    max-width: 1300px;
+    margin: 0 auto;
+    margin-top: -100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    .team-member-panel {
+      height: 100%;
+      min-height: 200px;
+      margin: 10px;
+      -webkit-transition: all 200ms linear;
+      -moz-transition: all 200ms linear;
+      -o-transition: all 200ms linear;
+      transition: all 200ms linear;
+      background-color: #fff;
+      box-shadow: 0 2px 10px 0 rgba(0,0,0,0.2);
+      border: 1px solid #ddd;
+      padding: 10px 40px 20px 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      border-radius: 4px;
+    }
+
+    .member-text-content {
+      padding-left: 20px;
+      width: 180px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .member-name {
+        font-size: 19px;
+        color: #434343;
+        font-family: 'Avenir-Heavy', sans-serif;
+        margin-bottom: 2px;
+      }
+
+      .member-company-title {
+        margin-top: 2px;
+        margin-bottom: 4px;
+        font-size: 18px;
+        font-family: 'Avenir-Light', sans-serif;
+        color: #878787;
+      }
+
+      .member-company-label {
+        padding-top: 20px;
+        margin-top: 2px;
+        margin-bottom: 4px;
+        font-size: 8px;
+        font-family: 'Helvetica', sans-serif;
+        font-weight: 200;
+        letter-spacing: 1.5px;
+        color: #878787;
+        text-transform: uppercase;
+      }
+
+      .team-bio-company-link {
+        margin-top: 2px;
+        margin-bottom: 4px;
+        font-size: 10px;
+        font-family: 'Helvetica', sans-serif;
+        font-weight: 200;
+        letter-spacing: 1.5px;
+        color: #878787;
+      }
+    }
+
+    .bio-image-wrap {
+      height: 124px;
+      width: 124px;
+      border-radius: 50%;
+      overflow: hidden;
+
+      .bio-image {
+        height: 124px;
+        width: auto;
+      }
+    }
+  }
+}
