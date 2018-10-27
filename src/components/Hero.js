@@ -16,7 +16,7 @@ class Hero extends Component {
     }
 
     componentDidMount () {
-      setTimeout(this.triggerTopBarAnimation, 300)
+      setTimeout(this.triggerTopBarAnimation, 800)
     }
 
     triggerTopBarAnimation () {

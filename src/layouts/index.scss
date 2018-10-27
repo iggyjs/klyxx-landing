@@ -17,3 +17,12 @@ html, body {
 	margin: 0 auto;
 	padding: 0;
 }
+
+.fade-in-content-appear {
+  opacity: 0.01;
+}
+
+.fade-in-content-appear.fade-in-content-appear-active {
+  opacity: 1;
+  transition: opacity .7s ease-in-out;
+}

@@ -34,10 +34,6 @@ class Header extends Component {
             <div className="header-component">
                 <div className="klyxx-header-desktop">
                     <ul className="klyxx-header-ul">
-                        {/*<li className="klyxx-header-li-element">*/}
-                            {/*<Link className="header-link">Team</Link>*/}
-                        {/*</li>*/}
-
                         <li className="klyxx-header-li-element">
                             <Link to={'/about/'} className="header-link">About Us</Link>
                         </li>
@@ -51,12 +47,8 @@ class Header extends Component {
                         </li>
 
                         <li style={{marginLeft: -30}} className="klyxx-header-li-element">
-                            <Link className="header-link" to={'/development'}>Development</Link>
+                            <Link className="header-link" to={'/team'}>Our Team</Link>
                         </li>
-
-                        {/*<li className="klyxx-header-li-element">*/}
-                            {/*<Link to={'https://klyxx.typeform.com/to/u5VosU'} className="header-link">Growth Report</Link>*/}
-                        {/*</li>*/}
                     </ul>
                 </div>
 
@@ -72,18 +64,12 @@ class Header extends Component {
                     </div>
 
                     <ul style={{height: this.state.mobileMenuHeight}} className="mobile-nav-ul">
-                        {/*<li className="mobile-nav-li">*/}
-                            {/*<Link>Team</Link>*/}
-                        {/*</li>*/}
                         <li className="mobile-nav-li">
                             <Link to={'/about/'}>About Us</Link>
                         </li>
                         <li className="mobile-nav-li">
-                            <Link to={'/development'}>Development</Link>
+                            <Link to={'/team'}>Our Team</Link>
                         </li>
-                        {/*<li className="mobile-nav-li">*/}
-                            {/*<Link>Growth Report</Link>*/}
-                        {/*</li>*/}
                     </ul>
                 </div>
             </div>

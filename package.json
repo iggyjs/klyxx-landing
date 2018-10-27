@@ -8,6 +8,7 @@
     "gatsby-link": "^1.6.40",
     "gatsby-plugin-react-helmet": "^2.0.10",
     "gatsby-plugin-sass": "^1.0.26",
+    "react-addons-css-transition-group": "^15.6.2",
     "react-helmet": "^5.2.0",
     "react-waypoint": "^8.0.1"
   },

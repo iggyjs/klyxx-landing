@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 import Link from 'gatsby-link'
 
 // Components
@@ -22,10 +23,17 @@ class Index extends Component {
     render () {
         return (
             <div>
+              <ReactCSSTransitionGroup
+                transitionName="fade-in-content" transitionAppear={true}
+                transitionAppearTimeout={700}
+                transitionEnterTimeout={0}
+                transitionLeaveTimeout={700}
+              >
                 <Navigation />
                 <Hero />
                 <Subhero />
                 <Footer />
+              </ReactCSSTransitionGroup>
             </div>
         )
     }

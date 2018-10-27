@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import zainHeadshot from '../../assets/images/team/zain.jpeg'
 import mattHeadshot from '../../assets/images/team/matt.jpeg'
 import iggyHeadshot from '../../assets/images/team/iggy.png'
+import linaHeadshot from '../../assets/images/team/lina.jpg'
 import victoriaHeadshot from '../../assets/images/team/victoria.jpeg'
 import hawkHeadshot from '../../assets/images/team/hawk.jpeg'
 
@@ -55,9 +56,9 @@ class Hero extends Component {
         {
           name: 'Natalina Schappach',
           title: 'Growth Hacker',
-          image: null,
+          image: linaHeadshot,
           companies: [
-            (<a className="team-bio-company-link" href="https://www.ycharts.com/" target="_blank">BRAVE South Africa</a>),
+            (<a className="team-bio-company-link">BRAVE South Africa</a>),
             (<a className="team-bio-company-link" href="http://www.unwomen.org/en" target="_blank">UN Women</a>),
           ],
           school: 'Interational Relations @ NYU'
