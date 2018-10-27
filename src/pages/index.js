@@ -1,12 +1,15 @@
 import React, { Component } from 'react'
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 import Link from 'gatsby-link'
+import mixpanel from 'mixpanel-browser'
 
 // Components
 import Navigation from '../components/Navigation';
 import Hero from '../components/Hero';
 import Subhero from '../components/Subhero';
 import Footer from '../components/Footer'
+
+mixpanel.init('f7725dfb70296f109b6f9c4b963c6acc');
 
 class Index extends Component {
     constructor (props) {
@@ -21,6 +24,7 @@ class Index extends Component {
     }
 
     render () {
+        mixpanel.track('Page View')
         return (
             <div>
               <ReactCSSTransitionGroup
